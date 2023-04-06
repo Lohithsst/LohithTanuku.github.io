@@ -1,0 +1,296 @@
+html,
+body {
+
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+
+body {
+    background-image: url(backgrounds/hexagons.001.jpeg);
+    background-size: cover;
+    background-color: #333;
+    background-repeat: no-repeat;
+}
+
+.left {
+    display: flex;
+}
+
+/* Nav bar */
+.header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0 2vw;
+    z-index: 2;
+}
+
+.introbutton {
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.5;
+    padding: 0px;
+    margin: 0%;
+    display: flex;
+    padding: 0 10px;
+}
+
+.achievementsbutton {
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.5;
+    padding: 0px;
+    margin: 0%;
+    display: flex;
+    padding: 0 10px;
+}
+
+.name {
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+    position: relative;
+    top: 0vh;
+    left: -3vw;
+    line-height: 1.5;
+    padding: 0px;
+    margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Main page */
+.firstpagemaintext {
+    color: white;
+    font-size: 4rem;
+    font-family: 'inter', sans-serif;
+    font-weight: 100;
+    position: relative;
+    top: 40vh;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.firstpagedescription {
+    color: white;
+    font-size: 3rem;
+    font-family: 'inter', sans-serif;
+    font-weight: 100;
+    position: relative;
+    top: 45vh;
+    line-height: 1.5;
+    text-align: center;
+    padding-bottom: 50;
+    margin: 0;
+}
+
+.divider {
+    height: 6px;
+    background-color: white;
+    position: relative;
+    top: 1200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Second page*/
+.secondpage {
+    display: flex;
+    position: relative;
+    top: 0vh;
+}
+
+/* Age card */
+.age {
+    position: relative;
+    top: 1250px;
+    left: 15vw;
+    min-width: 15.875em;
+    min-height: 20.875em;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.074);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: .7rem;
+    transition: all ease .3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.age .title {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 4rem;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    font-weight: 1200;
+}
+
+.age div strong {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.age div p {
+    margin: 0;
+    font-size: .9em;
+    font-weight: 300;
+}
+
+.age div span {
+    font-size: .7rem;
+    font-weight: 300;
+}
+
+.age div span:nth-child(3) {
+    font-weight: 500;
+    margin-right: .2rem;
+}
+
+.age:hover {
+    box-shadow: 0px 0px 20px 1px #ffbb763f;
+    border: 1px solid rgba(255, 255, 255, 0.454);
+}
+
+/* Schools card */
+.schools {
+    position: relative;
+    top: 1250px;
+    left: 25vw;
+    min-width: 15.875em;
+    min-height: 20.875em;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.074);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: .7rem;
+    transition: all ease .3s;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.schools .title {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 4rem;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    font-weight: 1200;
+}
+
+.schools div strong {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.schools div p {
+    margin: 0;
+    font-size: .9em;
+    font-weight: 300;
+}
+
+.schools div span {
+    font-size: .7rem;
+    font-weight: 300;
+}
+
+.schools div span:nth-child(3) {
+    font-weight: 500;
+    margin-right: .2rem;
+}
+
+.schools:hover {
+    box-shadow: 0px 0px 20px 1px #ffbb763f;
+    border: 1px solid rgba(255, 255, 255, 0.454);
+}
+
+/* Interests card */
+
+.interests {
+    position: relative;
+    top: 1250px;
+    left: 35vw;
+    min-width: 15.875em;
+    min-height: 20.875em;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.074);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: .7rem;
+    transition: all ease .3s;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.interests .title {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 4rem;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    font-weight: 1200;
+}
+
+.interests div strong {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.interests div p {
+    margin: 0;
+    font-size: .9em;
+    font-weight: 300;
+}
+
+.interests div span {
+    font-size: .7rem;
+    font-weight: 300;
+}
+
+.interests div span:nth-child(3) {
+    font-weight: 500;
+    margin-right: .2rem;
+}
+
+.interests:hover {
+    box-shadow: 0px 0px 20px 1px #ffbb763f;
+    border: 1px solid rgba(255, 255, 255, 0.454);
+}
+
+.divider2 {
+    height: 6px;
+    background-color: white;
+    position: relative;
+    top: 1600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Third page*/
+.thirdpage {
+    display: flex;
+    position: relative;
+    top: 1600px;
+}
+
+.thirdpagetext {
+    position: relative;
+    top: 0px;
+    left: 35vw;
+}
