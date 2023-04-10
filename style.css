@@ -67,6 +67,25 @@ body {
     flex-wrap: wrap;
 }
 
+@media(max-width: 600px) {
+    .achievementsbutton {
+        display: None;
+    }
+
+    .header {
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        height: 10vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 0 2vw;
+        z-index: 2;
+    }
+
+}
+
 /* Main page */
 .firstpagemaintext {
     color: white;
@@ -103,10 +122,11 @@ body {
     margin-bottom: 20px;
 }
 
-/* Second page*/
-.secondpage {
+/* Aboutme page*/
+.aboutmepage {
     display: flex;
     position: relative;
+    justify-content: space-evenly;
     top: 0vh;
 }
 
@@ -114,7 +134,7 @@ body {
 .age {
     position: relative;
     top: 1250px;
-    left: 15vw;
+    /* left: 15vw; */
     min-width: 15.875em;
     min-height: 20.875em;
     padding: 1rem;
@@ -167,7 +187,7 @@ body {
 .schools {
     position: relative;
     top: 1250px;
-    left: 25vw;
+    /* left: 25vw; */
     min-width: 15.875em;
     min-height: 20.875em;
     padding: 1rem;
@@ -222,7 +242,7 @@ body {
 .interests {
     position: relative;
     top: 1250px;
-    left: 35vw;
+    /* left: 35vw; */
     min-width: 15.875em;
     min-height: 20.875em;
     padding: 1rem;
@@ -282,15 +302,46 @@ body {
     width: 100%;
 }
 
-/* Third page*/
-.thirdpage {
+/* Achievements page*/
+.achievementspage {
     display: flex;
     position: relative;
+    justify-content: center;
     top: 1600px;
 }
 
-.thirdpagetext {
+.box {
+    width: 1200px;
+    height: 900px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+}
+
+.divider3 {
+    height: 6px;
+    background-color: white;
     position: relative;
-    top: 0px;
-    left: 35vw;
+    top: 1600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Projects page*/
+.projectspage {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 1600px;
+}
+
+.box {
+    width: 1200px;
+    height: 900px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    line-height: 200px;
 }
