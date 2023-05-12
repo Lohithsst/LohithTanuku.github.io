@@ -154,3 +154,42 @@ body {
     margin: 0%;
     display: flex;
 }
+
+.divider {
+    height: 0.1rem;
+    background-color: rgba(255, 255, 255, 0.514);
+    position: relative;
+    margin-top: 1.5rem;
+    width: 20rem;
+}
+
+/* Achievements page */
+.achievementspage {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    position: relative;
+    padding-top: 40vh;
+    padding-left: 13vw;
+    padding-bottom: 25rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.achievements {
+    color: rgba(204, 214, 246, 1);
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: 'inter', sans-serif;
+    line-height: 1.5;
+    padding-right: 0.5rem;
+    margin: 0%;
+    display: flex;
+}
+
+.achievementsbox {
+    border-radius: 1.5rem;
+    width: 15rem;
+    height: 15rem;
+    background-color: rgba(136, 146, 176, 1);
+}
