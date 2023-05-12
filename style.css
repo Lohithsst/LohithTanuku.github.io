@@ -1,4 +1,8 @@
 html,
+/* * {
+    outline: 1px solid greenyellow;
+} */
+
 body {
 
     font-family: Arial, sans-serif;
@@ -8,63 +12,40 @@ body {
 
 
 body {
-    background-image: url(backgrounds/hexagons.001.jpeg);
     background-size: cover;
-    background-color: #333;
+    background-color: rgb(15, 25, 47);
     background-repeat: no-repeat;
-}
-
-.left {
-    display: flex;
 }
 
 /* Nav bar */
 .header {
     display: flex;
     position: fixed;
-    justify-content: space-between;
     align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100vw;
-    height: 10vh;
-    background-color: rgba(0, 0, 0, 0.8);
+    height: 6vh;
+    background-color: rgb(3, 20, 38);
     padding: 0 2vw;
     z-index: 2;
 }
 
+.right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .introbutton {
     color: white;
-    font-size: 30px;
+    font-size: 1.2rem;
     font-weight: 300;
+    font-family: 'inter', sans-serif;
     line-height: 1.5;
-    padding: 0px;
+    padding-right: 0.5rem;
     margin: 0%;
     display: flex;
-    padding: 0 10px;
-}
-
-.achievementsbutton {
-    color: white;
-    font-size: 30px;
-    font-weight: 300;
-    line-height: 1.5;
-    padding: 0px;
-    margin: 0%;
-    display: flex;
-    padding: 0 10px;
-}
-
-.name {
-    color: white;
-    font-size: 2rem;
-    font-weight: 300;
-    position: relative;
-    top: 0vh;
-    left: -3vw;
-    line-height: 1.5;
-    padding: 0px;
-    margin: 0%;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 @media(max-width: 600px) {
@@ -87,13 +68,35 @@ body {
 }
 
 /* Main page */
+.mainpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    position: relative;
+    padding-top: 30vh;
+    padding-left: 13vw;
+    padding-bottom: 15rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.greeting {
+    color: #64FFDA;
+    position: relative;
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: center;
+    width: fit-content;
+    font-family: 'inter', sans-serif;
+}
+
 .firstpagemaintext {
-    color: white;
+    color: #CCD6F6;
     font-size: 4rem;
     font-family: 'inter', sans-serif;
-    font-weight: 100;
+    font-weight: 900;
     position: relative;
-    top: 40vh;
+    width: fit-content;
     line-height: 1.5;
     text-align: center;
     padding: 0;
@@ -101,247 +104,53 @@ body {
 }
 
 .firstpagedescription {
-    color: white;
+    color: #8892B0;
     font-size: 3rem;
     font-family: 'inter', sans-serif;
-    font-weight: 100;
+    font-weight: 700;
     position: relative;
-    top: 45vh;
+    width: fit-content;
     line-height: 1.5;
-    text-align: center;
     padding-bottom: 50;
     margin: 0;
 }
 
-.divider {
-    height: 6px;
-    background-color: white;
+.checkoutmywork {
+    box-sizing: border-box;
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
     position: relative;
-    top: 1200px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    border: 1px solid #64FFDA;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'inter', sans-serif;
+    color: #64FFDA;
+    top: 20vh;
 }
 
-/* Aboutme page*/
+/* About me */
 .aboutmepage {
     display: flex;
-    position: relative;
-    justify-content: space-evenly;
-    top: 0vh;
-}
-
-/* Age card */
-.age {
-    position: relative;
-    top: 1250px;
-    /* left: 15vw; */
-    min-width: 15.875em;
-    min-height: 20.875em;
-    padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.074);
-    border: 1px solid rgba(255, 255, 255, 0.222);
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    border-radius: .7rem;
-    transition: all ease .3s;
-    display: flex;
     flex-direction: column;
-}
-
-.age .title {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 4rem;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    font-weight: 1200;
-}
-
-.age div strong {
-    display: block;
-    margin-bottom: .5rem;
-}
-
-.age div p {
-    margin: 0;
-    font-size: .9em;
-    font-weight: 300;
-}
-
-.age div span {
-    font-size: .7rem;
-    font-weight: 300;
-}
-
-.age div span:nth-child(3) {
-    font-weight: 500;
-    margin-right: .2rem;
-}
-
-.age:hover {
-    box-shadow: 0px 0px 20px 1px #ffbb763f;
-    border: 1px solid rgba(255, 255, 255, 0.454);
-}
-
-/* Schools card */
-.schools {
+    justify-content: left;
     position: relative;
-    top: 1250px;
-    /* left: 25vw; */
-    min-width: 15.875em;
-    min-height: 20.875em;
-    padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.074);
-    border: 1px solid rgba(255, 255, 255, 0.222);
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    border-radius: .7rem;
-    transition: all ease .3s;
+    padding-top: 40vh;
+    padding-left: 13vw;
+    padding-bottom: 25rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.aboutme {
+    color: rgba(204, 214, 246, 1);
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: 'inter', sans-serif;
+    line-height: 1.5;
+    padding-right: 0.5rem;
+    margin: 0%;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.schools .title {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 4rem;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    font-weight: 1200;
-}
-
-.schools div strong {
-    display: block;
-    margin-bottom: .5rem;
-}
-
-.schools div p {
-    margin: 0;
-    font-size: .9em;
-    font-weight: 300;
-}
-
-.schools div span {
-    font-size: .7rem;
-    font-weight: 300;
-}
-
-.schools div span:nth-child(3) {
-    font-weight: 500;
-    margin-right: .2rem;
-}
-
-.schools:hover {
-    box-shadow: 0px 0px 20px 1px #ffbb763f;
-    border: 1px solid rgba(255, 255, 255, 0.454);
-}
-
-/* Interests card */
-
-.interests {
-    position: relative;
-    top: 1250px;
-    /* left: 35vw; */
-    min-width: 15.875em;
-    min-height: 20.875em;
-    padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.074);
-    border: 1px solid rgba(255, 255, 255, 0.222);
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    border-radius: .7rem;
-    transition: all ease .3s;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.interests .title {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 4rem;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    font-weight: 1200;
-}
-
-.interests div strong {
-    display: block;
-    margin-bottom: .5rem;
-}
-
-.interests div p {
-    margin: 0;
-    font-size: .9em;
-    font-weight: 300;
-}
-
-.interests div span {
-    font-size: .7rem;
-    font-weight: 300;
-}
-
-.interests div span:nth-child(3) {
-    font-weight: 500;
-    margin-right: .2rem;
-}
-
-.interests:hover {
-    box-shadow: 0px 0px 20px 1px #ffbb763f;
-    border: 1px solid rgba(255, 255, 255, 0.454);
-}
-
-.divider2 {
-    height: 6px;
-    background-color: white;
-    position: relative;
-    top: 1600px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-/* Achievements page*/
-.achievementspage {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    top: 1600px;
-}
-
-.box {
-    width: 1200px;
-    height: 900px;
-    background-color: blue;
-    color: white;
-    text-align: center;
-    line-height: 200px;
-}
-
-.divider3 {
-    height: 6px;
-    background-color: white;
-    position: relative;
-    top: 1600px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-/* Projects page*/
-.projectspage {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    top: 1600px;
-}
-
-.box {
-    width: 1200px;
-    height: 900px;
-    background-color: blue;
-    color: white;
-    text-align: center;
-    line-height: 200px;
 }
