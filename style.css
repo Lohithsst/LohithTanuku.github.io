@@ -170,7 +170,7 @@ body {
     justify-content: left;
     position: relative;
     padding-left: 13vw;
-    padding-bottom: 25rem;
+    padding-bottom: 10rem;
     width: fit-content;
     height: fit-content;
 }
@@ -182,7 +182,6 @@ body {
     font-family: 'inter', sans-serif;
     line-height: 1.5;
     padding-right: 0.5rem;
-    padding-bottom: 3rem;
     display: flex;
     max-width: fit-content;
 }
@@ -214,6 +213,30 @@ body {
     font-size: 0.8rem;
     width: fit-content;
     height: 2.4rem;
+    padding-top: 0.6rem
+}
+
+.Perse2023 {
+    color: #A8B2D1;
+    position: relative;
+    top: 1rem;
+    left: 1.5rem;
+    font-weight: 300;
+    font-size: 0.8rem;
+    width: fit-content;
+    height: 2.4rem;
+}
+
+.SJCHO2022 {
+    color: #CCD6F6;
+    position: relative;
+    top: 1rem;
+    left: 1.5rem;
+    padding-bottom: 0.3rem;
+    font-weight: 900;
+    font-size: 0.9rem;
+    width: fit-content;
+    height: fit-content;
 }
 
 .achievementspicture {
@@ -223,4 +246,52 @@ body {
     width: 14.5rem;
     height: 11rem;
     border-radius: 0.5rem;
+}
+
+/* Timeline */
+.timeline-container {
+    width: 100vw;
+    height: 5rem;
+    position: relative;
+    overflow: scroll;
+    padding: 1rem;
+}
+
+.timeline-line {
+    height: 3px;
+    width: 300rem;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.timeline-year {
+    height: fit-content;
+    width: fit-content;
+    color: #FFFFFF;
+    background-color: rgb(15, 25, 47);
+    position: absolute;
+    top: -3rem;
+    font-size: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.timeline-year:nth-child(1) {
+    left: 0%;
+}
+
+.timeline-year:nth-child(2) {
+    left: 25%;
+}
+
+.timeline-year:nth-child(3) {
+    left: 50%;
+}
+
+.timeline-year:nth-child(4) {
+    left: 75%;
+}
+
+.timeline-year:nth-child(5) {
+    left: 75%;
 }
