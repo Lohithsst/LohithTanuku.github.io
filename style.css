@@ -272,7 +272,7 @@ body {
 
 .timeline-line {
     height: 5px;
-    width: 300rem;
+    width: 305rem;
     background-color: #FFFFFF;
     position: relative;
 }
@@ -299,11 +299,11 @@ body {
 }
 
 .timeline-year:nth-child(3) {
-    left: 50%;
+    left: 52%;
 }
 
 .timeline-year:nth-child(4) {
-    left: 70%;
+    left: 72%;
 }
 
 .timelineline {
@@ -335,5 +335,16 @@ body {
     font-weight: 900;
     font-size: 1.8rem;
     width: 100%;
+    height: fit-content;
+}
+/* Projects page */
+.projectspage {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    position: relative;
+    padding-left: 13vw;
+    padding-bottom: 10rem;
+    width: fit-content;
     height: fit-content;
 }
