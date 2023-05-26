@@ -347,4 +347,12 @@ body {
     padding-bottom: 10rem;
     width: fit-content;
     height: fit-content;
+    gap: 2rem;
+}
+
+.projectpicture {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    border-radius: 0.5rem;
 }
