@@ -177,6 +177,7 @@ body {
   position: relative;
   padding-left: 13vw;
   padding-bottom: 10rem;
+  padding-top: 10rem;
   width: fit-content;
   height: fit-content;
 }
@@ -362,7 +363,7 @@ body {
 
 .timeline-line {
   height: 5px;
-  width: 305rem;
+  width: 300rem;
   background-color: #ffffff;
   position: relative;
 }
@@ -385,15 +386,15 @@ body {
 }
 
 .timeline-year:nth-child(2) {
-  left: 26%;
+  left: 25%;
 }
 
 .timeline-year:nth-child(3) {
-  left: 52%;
+  left: 50%;
 }
 
 .timeline-year:nth-child(4) {
-  left: 72%;
+  left: 75%;
 }
 
 .timelineline {
@@ -438,6 +439,7 @@ body {
   width: fit-content;
   height: fit-content;
   gap: 4rem;
+  padding-top: 10rem;
 }
 
 .projectpicture {
