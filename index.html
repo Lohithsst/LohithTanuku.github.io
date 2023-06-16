@@ -9,36 +9,39 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="input.css">
     <link rel="stylesheet" href="output.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
+
+    <div id="preloader">
+
+    </div>
+
     <nav class="header">
-        <img src="Logo.png" alt="Description of the image" height="40rem" width="40rem">
+        <a href="#homepage" onclick="testSetup()">
+            <img src="Logo.png" alt="Description of the image" height="40rem" width="40rem">
+        </a>
         <div class="right">
-            <a href="#aboutme" style="display: flex; flex-direction: row;">
-                <p class="introbutton" style="color: rgb(150, 239, 136);">1.</p>
-                <p class="introbutton" style="color: #CCD6F6;">About Me</p>
+            <a href="#aboutme">
+                <h2 class="introbutton"> <span style="color: rgb(150, 239, 136); margin-right: 0.3rem;">1.</span> <span style="color: #CCD6F6;">About Me</span></h2>
             </a>
-            <a href="#achievements" style="display: flex; flex-direction: row;">
-                <p class="introbutton" style="color: rgb(150, 239, 136);">2.</p>
-                <p class="introbutton" style="color: #CCD6F6;">Achievements</p>
+            <a href="#achievements">
+                <h2 class="introbutton"> <span style="color: rgb(150, 239, 136); margin-right: 0.3rem;">2.</span> <span style="color: #CCD6F6;">Achievements</span></h2>
             </a>
-            <a href="#timeline" style="display: flex; flex-direction: row;">
-                <p class="introbutton" style="color: rgb(150, 239, 136);">3.</p>
-                <p class="introbutton" style="color: #CCD6F6;">Experiences</p>
+            <a href="#timeline">
+                <h2 class="introbutton"> <span style="color: rgb(150, 239, 136); margin-right: 0.3rem;">3.</span> <span style="color: #CCD6F6;">Experiences</span></h2>
             </a>
-            <a href="#projects" style="display: flex; flex-direction: row;">
-                <p class="introbutton" style="color: rgb(150, 239, 136);">4.</p>
-                <p class="introbutton" style="color: #CCD6F6;">Projects</p>
+            <a href="#projects">
+                <h2 class="introbutton"> <span style="color: rgb(150, 239, 136); margin-right: 0.3rem;">4.</span> <span style="color: #CCD6F6;">Projects</span></h2>
             </a>
-            <a href="#Service" style="display: flex; flex-direction: row;">
-                <p class="introbutton" style="color: rgb(150, 239, 136);">5.</p>
-                <p class="introbutton" style="color: #CCD6F6;">Service</p>
+            <a href="#Service">
+                <h2 class="introbutton"> <span style="color: rgb(150, 239, 136); margin-right: 0.3rem;">5.</span> <span style="color: #CCD6F6;">Service</span></h2>
             </a>
         </div> 
     </nav>
-
-    <div class="mainpage">
+      
+    <div id="homepage" class="mainpage">
         <p class="greeting">Hi, my name is </p>
         <p class="firstpagemaintext">Tanuku Sai Surya Lohith</p>
         <p class="firstpagedescription"> & I am a student of the School of Science and Technology, Singapore</p>
@@ -46,39 +49,67 @@
     </div>
 
     <div id="aboutme" class="aboutmepage">
-        <div style="width: 60%;">
-            <div style="display: flex; flex-direction: row;">
-                <p class="aboutme" style="color: rgb(150, 239, 136);">1.</p>
-                <p class="aboutme">About Me</p>
-                <div class="divider"></div>
-            </div>
-            <div style="display: flex; flex-direction: row; margin-right: 3rem;">
-                <div style="display: flex; flex-direction: column;">
-                    <p style=" color: rgba(136, 146, 176, 1); margin: 1rem;">I am a student as School of
-                        Science
-                        and Technology, Singapore studying Computing+ as an applied subject. I have developed numerous
-                        projects
-                        and applications, and actively participated in various competitions.<br><br>Currently, these are the
-                        languages I have used so far
-                    </p>
-                    <div class= "listoflanguages">
-                        <ul style= "display: flex; flex-direction: column; gap: 0.5rem;">
-                            <li style="flex-basis: 3rem;">▹ Python</li>
-                            <li style="flex-basis: 3rem;">▹ Block code (Lego Mindstorms,Scratch)</li>
-                            <li style="flex-basis: 3rem;">▹ HTML</li>
-                        </ul>
-                        <ul style= "display: flex; flex-direction: column; gap: 0.5rem;">
-                            <li style="flex-basis: 3rem;">▹ CSS</li>
-                            <li style="flex-basis: 3rem;">▹ Java</li>
-                            <li style="flex-basis: 3rem;">▹ Swift</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div style="display: flex; flex-direction: row; margin-bottom: 2rem;">
+            <p class="aboutme" style="color: rgb(150, 239, 136);">1.</p>
+            <p class="aboutme">About Me</p>
+            <div class="divider"></div>
         </div>
-        <div style="display: flex; align-items: flex-start;">
-            <div class="achievementsbox" style="position: relative; margin-top: 0rem;">
-                <img src="Temphoto.JPG" alt="image of me" style="padding: 1rem; border-radius: 1.5rem;">
+        <div class = "aboutmetext">
+            <div style="display: flex; flex-direction: column; width: 70%;">
+                <h2 style=" color: rgba(136, 146, 176, 1); margin: 1rem; font-size: 20px;">I am a student as School of
+                    Science
+                    and Technology, Singapore studying Computing+ as an applied subject. I have developed numerous
+                    projects
+                    and applications, and actively participated in various competitions.<br><br>Currently, these are the
+                    languages I have used so far
+                </h2>
+                <div id="listContainer"></div>
+                <script>
+                    function createList(){
+                        var listContainer = document.getElementById('listContainer');
+                    
+                        if (window.innerWidth < 1200) {
+                            listContainer.innerHTML = `
+                                <div class="listoflanguages">
+                                    <ul class="list">
+                                    <li>▹ Python</li>
+                                    <li>▹ Block code (Lego Mindstorms, Scratch)</li>
+                                    <li>▹ HTML</li>
+                                    <li>▹ CSS</li>
+                                    <li>▹ Java</li>
+                                    <li>▹ Swift</li>
+                                    </ul>
+                                </div>
+                            `;
+                        } else{
+                            listContainer.innerHTML = `
+
+                                <div class="listoflanguages">
+                                    <ul style = "display: flex; flex-direction: column; gap: 1rem;">
+                                        <li>▹ Python</li>
+                                        <li>▹ Block code (Lego Mindstorms, Scratch)</li>
+                                        <li>▹ HTML</li>
+                                    </ul>
+
+                                    <ul style = "display: flex; flex-direction: column; gap: 1rem;">
+                                        <li>▹ CSS</li>
+                                        <li>▹ Java</li>
+                                        <li>▹ Swift</li>
+                                    </ul>
+                                </div>
+                            `;
+                        }
+                    }
+                </script>
+                <script>
+                    createList();
+                    window.addEventListener('resize', createList);
+                </script>
+            </div>
+            <div style="display: flex; align-items: flex-start; align-self: center;">
+                <div class="aboutmepicture">
+                    <img src="Temphoto.JPG" alt="image of me" style="padding: 1rem; border-radius: 1.5rem;">
+                </div>
             </div>
         </div>
     </div>
@@ -92,7 +123,7 @@
         <div style="display: flex; flex-direction: row; gap: 1rem; flex-wrap: wrap; max-width: 80vw; margin-top: 2rem;">
             <div class="achievementsbox" style="position: relative;">
                 <p class="achievementsboxtitle">Perse 2023</p>
-                <p class="Perse2023">Round 1: Distinction; Final Round: Bronze</p>
+                <p class="achievementsboxdescription">Round 1: Distinction; Final: Higher participation</p>
                 <div class="image-container">
                     <img src="Perse 2023 .png" alt="Perse 2023" class="achievementspicture">
                     <div class="overlay">
@@ -206,7 +237,7 @@
                 <p class=" achievementsboxtitle">FLL 2021-2022
                 </p>
                 <p class="achievementsboxdescription">
-                    participation
+                    Participation
                 </p>
                 <div class="image-container">
                     <img src="FLL 2021-2022.png" alt="FLL 2021-2022" class="achievementspicture">
@@ -218,14 +249,14 @@
 
             <div id="fullscreen6" class="fullscreen">
                 <a href="#achievements" class="close">Close</a>
-                <img src="FLL 2021-2022.png" alt="FLL 2021-2022" class="achievementspicture">
+                <img src="FLL 2021-2022.png" alt="FLL 2021-2022" class="fullscreen-image">
             </div>
 
             <div class="achievementsbox" style="position: relative;"">
                 <p class=" achievementsboxtitle">SJCHO 2022
                 </p>
                 <p class="achievementsboxdescription">
-                    participation
+                    Participation
                 </p>
                 <div class="image-container">
                     <img src="SJCHO 2022.png" alt="SJCHO 2022" class="achievementspicture">
@@ -237,11 +268,11 @@
 
             <div id="fullscreen7" class="fullscreen">
                 <a href="#achievements" class="close">Close</a>
-                <img src="SJCHO 2022.png" alt="SJCHO 2022" class="achievementspicture">
+                <img src="SJCHO 2022.png" alt="SJCHO 2022" class="fullscreen-image">
             </div>
 
             <div class="achievementsbox" style="position: relative;"">
-                <p  class=" SJCHO2022">
+                <p  class="achievementsboxtitle">
                 AI FOR INDUSTRY® - Literacy In AI
                 </p>
                 <p class="achievementsboxdescription">
@@ -257,7 +288,7 @@
 
             <div id="fullscreen8" class="fullscreen">
                 <a href="#achievements" class="close">Close</a>
-                <img src="AI FOR INDUSTRY® - Literacy In AI.png" alt="AI FOR INDUSTRY" class="achievementspicture">
+                <img src="AI FOR INDUSTRY® - Literacy In AI.png" alt="AI FOR INDUSTRY" class="fullscreen-image">
             </div>
         </div>
     </div>
@@ -605,12 +636,21 @@
                         <p style= "color: rgb(150, 239, 136);  text-align: right;font-size: 1rem;"> 2023</p>
                         <p style= "color: rgba(204, 214, 246, 1);  text-align: right; font-size: 1.5rem;"> Python in Five (Class initiated project)</p>
                         <p style="color: white; text-align: right; height: 16rem;"> 
-                            Python in Five was a student-initiated project that conducted a 5-hour beginners' Python programming workshop specifically designed for 10-13-year-olds. The workshop consisted of five sessions, each lasting 5 hours, and took place in March 2023. With an impressive turnout, we had nearly 70 enthusiastic participants. Our primary objective was to ignite the participants' curiosity in programming, recognizing its growing importance in the 21st century.</p>
+                            Python in Five was a student-initiated project that conducted a 5-hour beginners' Python programming workshop for 10-13-year-olds. The workshop consisted of five sessions, each lasting 5 hours, and took place in March 2023. With an impressive turnout, we had nearly 70 enthusiastic participants. Our primary objective was to ignite the participants' curiosity in programming, recognizing its growing importance in the 21st century.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            setTimeout(function(){
+                loader.style.display = "none";
+            }, 1000);
+        })
+    </script> -->
 </body>
 
 </html>
