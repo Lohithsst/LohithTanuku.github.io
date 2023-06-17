@@ -203,27 +203,26 @@ body {
 .achievementsbox {
   border-radius: 1.5rem;
   margin: 2rem;
-  width: 25rem;
-  height: 25rem;
+  width: 20rem;
+  height: 20rem;
   background-color: rgb(21, 44, 77);
+  display: flex;
+  flex-direction: column;
 }
 
 .achievementspicture {
   position: relative;
-  top: 1.2rem;
-  left: 1.3rem;
-  width: 22rem;
-  height: 17rem;
+  width: 18rem;
+  height: 13rem;
   border-radius: 0.5rem;
 }
 
 .achievementsboxtitle {
   color: #ccd6f6;
   position: relative;
-  top: 1rem;
   left: 1.5rem;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 16px;
   width: fit-content;
   height: fit-content;
 }
@@ -231,10 +230,9 @@ body {
 .achievementsboxdescription {
   color: #a8b2d1;
   position: relative;
-  top: 1rem;
   left: 1.5rem;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 13px;
   width: fit-content;
   height: 2.4rem;
   padding-top: 0.6rem;
@@ -243,16 +241,17 @@ body {
 
 .image-container {
   position: relative;
-  display: inline-block;
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
 }
 
 .overlay {
   position: absolute;
-  top: 1.2rem;
-  left: 1.3rem;
   border-radius: 0.5rem;
-  width: 100%;
-  height: 100%;
+  width: 22rem;
+  height: 17rem;
   opacity: 0;
   transition: opacity 0.3s ease;
   background-color: rgba(0, 0, 0, 0.5);
