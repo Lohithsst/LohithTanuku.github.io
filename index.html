@@ -1,109 +1,91 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My Website</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-    </style>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="input.css" />
-    <link rel="stylesheet" href="output.css" />
-    <script src="script.js"></script>
-  </head>
 
-  <body>
-    <!-- <div id="preloader">
+<head>
+  <title>My Website</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+  </style>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="input.css" />
+  <link rel="stylesheet" href="output.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!-- <div id="preloader">
 
     </div> -->
 
-    <nav class="header">
-      <a href="#homepage" onclick="testSetup()">
-        <img
-          src="Logo.png"
-          alt="Description of the image"
-          height="40rem"
-          width="40rem"
-        />
+  <nav class="header">
+    <a href="#homepage" onclick="testSetup()">
+      <img src="Logo.png" alt="Description of the image" height="40rem" width="40rem" />
+    </a>
+    <div class="right">
+      <a href="#aboutme">
+        <h2 class="introbutton">
+          <span style="color: rgb(150, 239, 136); margin-right: 0.3rem">1.</span>
+          <span style="color: #ccd6f6">About Me</span>
+        </h2>
       </a>
-      <div class="right">
-        <a href="#aboutme">
-          <h2 class="introbutton">
-            <span style="color: rgb(150, 239, 136); margin-right: 0.3rem"
-              >1.</span
-            >
-            <span style="color: #ccd6f6">About Me</span>
-          </h2>
-        </a>
-        <a href="#achievements">
-          <h2 class="introbutton">
-            <span style="color: rgb(150, 239, 136); margin-right: 0.3rem"
-              >2.</span
-            >
-            <span style="color: #ccd6f6">Achievements</span>
-          </h2>
-        </a>
-        <a href="#timeline">
-          <h2 class="introbutton">
-            <span style="color: rgb(150, 239, 136); margin-right: 0.3rem"
-              >3.</span
-            >
-            <span style="color: #ccd6f6">Experiences</span>
-          </h2>
-        </a>
-        <a href="#projects">
-          <h2 class="introbutton">
-            <span style="color: rgb(150, 239, 136); margin-right: 0.3rem"
-              >4.</span
-            >
-            <span style="color: #ccd6f6">Projects</span>
-          </h2>
-        </a>
-        <a href="#Service">
-          <h2 class="introbutton">
-            <span style="color: rgb(150, 239, 136); margin-right: 0.3rem"
-              >5.</span
-            >
-            <span style="color: #ccd6f6">Service</span>
-          </h2>
-        </a>
-      </div>
-    </nav>
-
-    <div id="homepage" class="mainpage">
-      <p class="greeting">Hi, my name is</p>
-      <p class="firstpagemaintext">Tanuku Sai Surya Lohith</p>
-      <p class="firstpagedescription">
-        & I am a student of the School of Science and Technology, Singapore
-      </p>
-      <a href="#aboutme"
-        ><button class="checkoutmywork">Find out more!</button></a
-      >
+      <a href="#achievements">
+        <h2 class="introbutton">
+          <span style="color: rgb(150, 239, 136); margin-right: 0.3rem">2.</span>
+          <span style="color: #ccd6f6">Achievements</span>
+        </h2>
+      </a>
+      <a href="#timeline">
+        <h2 class="introbutton">
+          <span style="color: rgb(150, 239, 136); margin-right: 0.3rem">3.</span>
+          <span style="color: #ccd6f6">Experiences</span>
+        </h2>
+      </a>
+      <a href="#projects">
+        <h2 class="introbutton">
+          <span style="color: rgb(150, 239, 136); margin-right: 0.3rem">4.</span>
+          <span style="color: #ccd6f6">Projects</span>
+        </h2>
+      </a>
+      <a href="#Service">
+        <h2 class="introbutton">
+          <span style="color: rgb(150, 239, 136); margin-right: 0.3rem">5.</span>
+          <span style="color: #ccd6f6">Service</span>
+        </h2>
+      </a>
     </div>
+  </nav>
 
-    <div id="aboutme" class="aboutmepage">
-      <div style="display: flex; flex-direction: row; margin-bottom: 2rem">
-        <p class="aboutme" style="color: rgb(150, 239, 136)">1.</p>
-        <p class="aboutme">About Me</p>
-        <div class="divider"></div>
-      </div>
-      <div class="aboutmetext">
-        <div style="display: flex; flex-direction: column; width: 70%">
-          <h2
-            style="color: rgba(136, 146, 176, 1); margin: 1rem; font-size: 20px"
-          >
-            I am a student as School of Science and Technology, Singapore
-            studying Computing+ as an applied subject. I have developed numerous
-            projects and applications, and actively participated in various
-            competitions.<br /><br />Currently, these are the languages I have
-            used so far
-          </h2>
-          <div id="listContainer"></div>
-          <script>
-            function createList() {
-              var listContainer = document.getElementById("listContainer");
+  <div id="homepage" class="mainpage">
+    <p class="greeting">Hi, my name is</p>
+    <p class="firstpagemaintext">Tanuku Sai Surya Lohith</p>
+    <p class="firstpagedescription">
+      & I am a student of the School of Science and Technology, Singapore
+    </p>
+    <a href="#aboutme"><button class="checkoutmywork">Find out more!</button></a>
+  </div>
 
-              if (window.innerWidth < 1200) {
-                listContainer.innerHTML = `
+  <div id="aboutme" class="aboutmepage">
+    <div style="display: flex; flex-direction: row; margin-bottom: 2rem">
+      <p class="aboutme" style="color: rgb(150, 239, 136)">1.</p>
+      <p class="aboutme">About Me</p>
+      <div class="divider"></div>
+    </div>
+    <div class="aboutmetext">
+      <div style="display: flex; flex-direction: column; width: 70%">
+        <h2 style="color: rgba(136, 146, 176, 1); margin: 1rem; font-size: 20px">
+          I am a student as School of Science and Technology, Singapore
+          studying Computing+ as an applied subject. I have developed numerous
+          projects and applications, and actively participated in various
+          competitions.<br /><br />Currently, these are the languages I have
+          used so far
+        </h2>
+        <div id="listContainer"></div>
+        <script>
+          function createList() {
+            var listContainer = document.getElementById("listContainer");
+
+            if (window.innerWidth < 1200) {
+              listContainer.innerHTML = `
                                 <div class="listoflanguages">
                                     <ul class="list">
                                     <li>▹ Python</li>
@@ -115,8 +97,8 @@
                                     </ul>
                                 </div>
                             `;
-              } else {
-                listContainer.innerHTML = `
+            } else {
+              listContainer.innerHTML = `
 
                                 <div class="listoflanguages">
                                     <ul style = "display: flex; flex-direction: column; gap: 1rem;">
@@ -132,1259 +114,954 @@
                                     </ul>
                                 </div>
                             `;
-              }
             }
-          </script>
-          <script>
-            createList();
-            window.addEventListener("resize", createList);
-          </script>
-        </div>
-        <div style="display: flex; align-items: flex-start; align-self: center">
-          <div class="aboutmepicture">
-            <img
-              src="Temphoto.JPG"
-              alt="image of me"
-              style="padding: 1rem; border-radius: 1.5rem"
-            />
-          </div>
+          }
+        </script>
+        <script>
+          createList();
+          window.addEventListener("resize", createList);
+        </script>
+      </div>
+      <div style="display: flex; align-items: flex-start; align-self: center">
+        <div class="aboutmepicture">
+          <img src="Temphoto.JPG" alt="image of me" style="padding: 1rem; border-radius: 1.5rem" />
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="achievements" class="achievementspage">
-      <div style="display: flex; flex-direction: row">
-        <h2 class="achievements">
-          <span style="color: rgb(150, 239, 136); padding-right: 1rem">
-            2.
-          </span>
-          Achievements
-        </h2>
-        <div class="divider" style="height: 0.1rem; width: 20rem"></div>
-      </div>
+  <div id="achievements" class="achievementspage">
+    <div style="display: flex; flex-direction: row">
+      <h2 class="achievements">
+        <span style="color: rgb(150, 239, 136); padding-right: 1rem">
+          2.
+        </span>
+        Achievements
+      </h2>
+      <div class="divider" style="height: 0.1rem; width: 20rem"></div>
+    </div>
 
-      <div
-        style="
+    <div style="
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
+          justify-content: space-evenly;
           margin-top: 2rem;
-        "
-      >
-        <div
-          class="achievementsbox"
-          style="position: relative; justify-content: center"
-        >
-          <p class="achievementsboxtitle">Perse 2023</p>
-          <p class="achievementsboxdescription">
-            Round 1: Distinction; Final: Higher participation
-          </p>
-          <div class="image-container">
-            <img
-              src="Perse 2023 .png"
-              alt="Perse 2023"
-              class="achievementspicture"
-            />
-            <div class="overlay">
-              <a href="#fullscreen">View Image</a>
-            </div>
+        ">
+      <div class="achievementsbox" style="position: relative; justify-content: center">
+        <p class="achievementsboxtitle">Perse 2023</p>
+        <p class="achievementsboxdescription">
+          Round 1: Distinction; Final: Higher participation
+        </p>
+        <div class="image-container">
+          <img src="Perse 2023 .png" alt="Perse 2023" class="achievementspicture" />
+          <div class="overlay">
+            <a href="#fullscreen">View Image</a>
           </div>
         </div>
+      </div>
 
-        <div id="fullscreen" class="fullscreen">
-          <a href="#achievements" class="close">Close</a>
-          <img
-            src="Perse 2023 .png"
-            alt="Perse 2023"
-            class="fullscreen-image"
-          />
-        </div>
+      <div id="fullscreen" class="fullscreen">
+        <a href="#achievements" class="close">Close</a>
+        <img src="Perse 2023 .png" alt="Perse 2023" class="fullscreen-image" />
+      </div>
 
-        <div
-          class="achievementsbox"
-          style="position: relative; justify-content: center"
-        >
-          <p class="achievementsboxtitle">Perse 2022</p>
-          <p class="achievementsboxdescription">Round 1: Merit</p>
-          <div class="image-container">
-            <img
-              src="Perse 2021-2022.png"
-              alt="Perse 2021-2022"
-              class="achievementspicture"
-            />
-            <div class="overlay">
-              <a href="#fullscreen1">View Image</a>
-            </div>
+      <div class="achievementsbox" style="position: relative; justify-content: center">
+        <p class="achievementsboxtitle">Perse 2022</p>
+        <p class="achievementsboxdescription">Round 1: Merit</p>
+        <div class="image-container">
+          <img src="Perse 2021-2022.png" alt="Perse 2021-2022" class="achievementspicture" />
+          <div class="overlay">
+            <a href="#fullscreen1">View Image</a>
           </div>
         </div>
+      </div>
 
-        <div id="fullscreen1" class="fullscreen">
-          <a href="#achievements" class="close">Close</a>
-          <img
-            src="Perse 2021-2022.png"
-            alt="Perse 2021-2022"
-            class="fullscreen-image"
-          />
-        </div>
+      <div id="fullscreen1" class="fullscreen">
+        <a href="#achievements" class="close">Close</a>
+        <img src="Perse 2021-2022.png" alt="Perse 2021-2022" class="fullscreen-image" />
+      </div>
 
-        <div
-          class="achievementsbox"
-          style="position: relative; justify-content: center"
-        >
-          <p class="achievementsboxtitle">NP Maths Challenge</p>
-          <p class="achievementsboxdescription">1st Place</p>
-          <div class="image-container">
-            <img
-              src="NPmathchallenge.jpg"
-              alt="NP math challenge"
-              class="achievementspicture"
-            />
-            <div class="overlay">
-              <a href="#fullscreen2">View Image</a>
-            </div>
+      <div class="achievementsbox" style="position: relative; justify-content: center">
+        <p class="achievementsboxtitle">NP Maths Challenge</p>
+        <p class="achievementsboxdescription">1st Place</p>
+        <div class="image-container">
+          <img src="NPmathchallenge.jpg" alt="NP math challenge" class="achievementspicture" />
+          <div class="overlay">
+            <a href="#fullscreen2">View Image</a>
           </div>
         </div>
+      </div>
 
-        <div id="fullscreen2" class="fullscreen">
-          <a href="#achievements" class="close">Close</a>
-          <img
-            src="NPmathchallenge.jpg"
-            alt="NP math challenge"
-            class="fullscreen-image"
-          />
-        </div>
+      <div id="fullscreen2" class="fullscreen">
+        <a href="#achievements" class="close">Close</a>
+        <img src="NPmathchallenge.jpg" alt="NP math challenge" class="fullscreen-image" />
+      </div>
 
-        <div
-          class="achievementsbox"
-          style="position: relative; justify-content: center"
-        >
-          <p class="achievementsboxtitle">Bebras 2022</p>
-          <p class="achievementsboxdescription">
-            Bronze award (15th in the country)
-          </p>
-          <div class="image-container">
-            <img src="Bebras.png" alt="Bebras" class="achievementspicture" />
-            <div class="overlay">
-              <a href="#fullscreen3">View Image</a>
-            </div>
+      <div class="achievementsbox" style="position: relative; justify-content: center">
+        <p class="achievementsboxtitle">Bebras 2022</p>
+        <p class="achievementsboxdescription">
+          Bronze award (15th in the country)
+        </p>
+        <div class="image-container">
+          <img src="Bebras.png" alt="Bebras" class="achievementspicture" />
+          <div class="overlay">
+            <a href="#fullscreen3">View Image</a>
           </div>
         </div>
+      </div>
 
-        <div id="fullscreen3" class="fullscreen">
-          <a href="#achievements" class="close">Close</a>
-          <img src="Bebras.png" alt="Bebras" class="fullscreen-image" />
-        </div>
+      <div id="fullscreen3" class="fullscreen">
+        <a href="#achievements" class="close">Close</a>
+        <img src="Bebras.png" alt="Bebras" class="fullscreen-image" />
+      </div>
 
-        <div
-          class="achievementsbox"
-          style="position: relative; justify-content: center"
-        >
-          <p class="achievementsboxtitle">AIO 2022</p>
-          <p class="achievementsboxdescription">Credit</p>
-          <div class="image-container">
-            <img
-              src="AIO 2022.png"
-              alt="AIO 2022"
-              class="achievementspicture"
-            />
-            <div class="overlay">
-              <a href="#fullscreen4">View Image</a>
-            </div>
+      <div class="achievementsbox" style="position: relative; justify-content: center">
+        <p class="achievementsboxtitle">AIO 2022</p>
+        <p class="achievementsboxdescription">Credit</p>
+        <div class="image-container">
+          <img src="AIO 2022.png" alt="AIO 2022" class="achievementspicture" />
+          <div class="overlay">
+            <a href="#fullscreen4">View Image</a>
           </div>
         </div>
+      </div>
 
-        <div id="fullscreen4" class="fullscreen">
-          <a href="#achievements" class="close">Close</a>
-          <img src="AIO 2022.png" alt="AIO 2022" class="fullscreen-image" />
-        </div>
+      <div id="fullscreen4" class="fullscreen">
+        <a href="#achievements" class="close">Close</a>
+        <img src="AIO 2022.png" alt="AIO 2022" class="fullscreen-image" />
+      </div>
 
-        <div
-          class="achievementsbox"
-          style="position: relative; justify-content: center"
-        >
-          <p class="achievementsboxtitle">CAT 2021</p>
-          <p class="achievementsboxdescription">Credit</p>
-          <div class="image-container">
-            <img
-              src="CAT 2021.png"
-              alt="CAT 2021"
-              class="achievementspicture"
-            />
-            <div class="overlay">
-              <a href="#fullscreen5">View Image</a>
-            </div>
+      <div class="achievementsbox" style="position: relative; justify-content: center">
+        <p class="achievementsboxtitle">CAT 2021</p>
+        <p class="achievementsboxdescription">Credit</p>
+        <div class="image-container">
+          <img src="CAT 2021.png" alt="CAT 2021" class="achievementspicture" />
+          <div class="overlay">
+            <a href="#fullscreen5">View Image</a>
           </div>
         </div>
+      </div>
 
-        <div id="fullscreen5" class="fullscreen">
-          <a href="#achievements" class="close">Close</a>
-          <img src="CAT 2021.png" alt="CAT 2021" class="fullscreen-image" />
-        </div>
+      <div id="fullscreen5" class="fullscreen">
+        <a href="#achievements" class="close">Close</a>
+        <img src="CAT 2021.png" alt="CAT 2021" class="fullscreen-image" />
+      </div>
 
-        <div
-          class="achievementsbox"
-          style="position: relative; justify-content: center"
-        >
-          <p class="achievementsboxtitle">FLL 2021-2022</p>
-          <p class="achievementsboxdescription">Participation</p>
-          <div class="image-container">
-            <img
-              src="FLL 2021-2022.png"
-              alt="FLL 2021-2022"
-              class="achievementspicture"
-            />
-            <div class="overlay">
-              <a href="#fullscreen6">View Image</a>
-            </div>
+      <div class="achievementsbox" style="position: relative; justify-content: center">
+        <p class="achievementsboxtitle">FLL 2021-2022</p>
+        <p class="achievementsboxdescription">Participation</p>
+        <div class="image-container">
+          <img src="FLL 2021-2022.png" alt="FLL 2021-2022" class="achievementspicture" />
+          <div class="overlay">
+            <a href="#fullscreen6">View Image</a>
           </div>
         </div>
+      </div>
 
-        <div id="fullscreen6" class="fullscreen">
-          <a href="#achievements" class="close">Close</a>
-          <img
-            src="FLL 2021-2022.png"
-            alt="FLL 2021-2022"
-            class="fullscreen-image"
-          />
-        </div>
+      <div id="fullscreen6" class="fullscreen">
+        <a href="#achievements" class="close">Close</a>
+        <img src="FLL 2021-2022.png" alt="FLL 2021-2022" class="fullscreen-image" />
+      </div>
 
-        <div
-          class="achievementsbox"
-          style="position: relative; justify-content: center"
-        >
-          <p class="achievementsboxtitle">SJCHO 2022</p>
-          <p class="achievementsboxdescription">Participation</p>
-          <div class="image-container">
-            <img
-              src="SJCHO 2022.png"
-              alt="SJCHO 2022"
-              class="achievementspicture"
-            />
-            <div class="overlay">
-              <a href="#fullscreen7">View Image</a>
-            </div>
+      <div class="achievementsbox" style="position: relative; justify-content: center">
+        <p class="achievementsboxtitle">SJCHO 2022</p>
+        <p class="achievementsboxdescription">Participation</p>
+        <div class="image-container">
+          <img src="SJCHO 2022.png" alt="SJCHO 2022" class="achievementspicture" />
+          <div class="overlay">
+            <a href="#fullscreen7">View Image</a>
           </div>
         </div>
+      </div>
 
-        <div id="fullscreen7" class="fullscreen">
-          <a href="#achievements" class="close">Close</a>
-          <img src="SJCHO 2022.png" alt="SJCHO 2022" class="fullscreen-image" />
-        </div>
+      <div id="fullscreen7" class="fullscreen">
+        <a href="#achievements" class="close">Close</a>
+        <img src="SJCHO 2022.png" alt="SJCHO 2022" class="fullscreen-image" />
+      </div>
 
-        <div
-          class="achievementsbox"
-          style="position: relative; justify-content: center"
-        >
-          <p class="achievementsboxtitle">AI FOR INDUSTRY® - Literacy In AI</p>
-          <p class="achievementsboxdescription">Course Completed</p>
-          <div class="image-container">
-            <img
-              src="AI FOR INDUSTRY® - Literacy In AI.png"
-              alt="AI FOR INDUSTRY"
-              class="achievementspicture"
-            />
-            <div class="overlay">
-              <a href="#fullscreen8">View Image</a>
-            </div>
+      <div class="achievementsbox" style="position: relative; justify-content: center">
+        <p class="achievementsboxtitle">AI FOR INDUSTRY® - Literacy In AI</p>
+        <p class="achievementsboxdescription">Course Completed</p>
+        <div class="image-container">
+          <img src="AI FOR INDUSTRY® - Literacy In AI.png" alt="AI FOR INDUSTRY" class="achievementspicture" />
+          <div class="overlay">
+            <a href="#fullscreen8">View Image</a>
           </div>
         </div>
+      </div>
 
-        <div id="fullscreen8" class="fullscreen">
-          <a href="#achievements" class="close">Close</a>
-          <img
-            src="AI FOR INDUSTRY® - Literacy In AI.png"
-            alt="AI FOR INDUSTRY"
-            class="fullscreen-image"
-          />
-        </div>
+      <div id="fullscreen8" class="fullscreen">
+        <a href="#achievements" class="close">Close</a>
+        <img src="AI FOR INDUSTRY® - Literacy In AI.png" alt="AI FOR INDUSTRY" class="fullscreen-image" />
       </div>
     </div>
+  </div>
 
-    <div
-      id="timeline"
-      style="padding-left: 13vw; padding-bottom: 10rem; padding-top: 10rem"
-    >
-      <div style="display: flex; flex-direction: row; margin-bottom: 3rem">
-        <p class="achievements" style="color: rgb(150, 239, 136)">3.</p>
-        <p class="achievements">My experiences</p>
-        <div class="divider" style="height: 0.1rem; width: 20rem"></div>
-      </div>
-      <div class="timeline-container">
-        <div style="display: flex; flex-direction: row; width: 300rem">
-          <!-- 2023 -->
-          <div
-            style="
+  <div id="timeline" style="padding-left: 13vw; padding-bottom: 10rem; padding-top: 10rem">
+    <div style="display: flex; flex-direction: row; margin-bottom: 3rem">
+      <p class="achievements" style="color: rgb(150, 239, 136)">3.</p>
+      <p class="achievements">My experiences</p>
+      <div class="divider" style="height: 0.1rem; width: 20rem"></div>
+    </div>
+    <div class="timeline-container">
+      <div style="display: flex; flex-direction: row; width: 300rem">
+        <!-- 2023 -->
+        <div style="
               display: flex;
               flex-direction: row;
               width: 25%;
               justify-content: space-evenly;
-            "
-          >
-            <div
-              style="
+            ">
+          <div style="
                 display: flex;
                 align-items: flex-end;
                 flex-direction: column;
-              "
-            >
-              <p
-                class="timelineboxtitle"
-                style="color: white; margin-bottom: 1rem"
-              >
-                Student-Initiated Project
+              ">
+            <p class="timelineboxtitle" style="color: white; margin-bottom: 1rem">
+              Student-Initiated Project
+            </p>
+            <div class="timelinebox" style="padding: 1rem; border-radius: 1.5rem">
+              <img src="SIP.png" alt="SIP" style="width: 100%; border-radius: 1.5rem" />
+            </div>
+            <div class="timelineline"></div>
+          </div>
+
+          <div style="
+                display: flex;
+                width: fit-content;
+                position: relative;
+                align-items: end;
+              ">
+            <div style="width: fit-content">
+              <p class="timelineboxtitle" style="
+                    color: white;
+                    padding: 0 1rem 1rem 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 20rem;
+                  ">
+                Singapore Junior Physics Olympiad
               </p>
-              <div
-                class="timelinebox"
-                style="padding: 1rem; border-radius: 1.5rem"
-              >
-                <img
-                  src="SIP.png"
-                  alt="SIP"
-                  style="width: 100%; border-radius: 1.5rem"
-                />
+              <div class="timelineline"></div>
+            </div>
+          </div>
+
+          <div style="
+                display: flex;
+                width: fit-content;
+                position: relative;
+                align-items: end;
+              ">
+            <div style="width: fit-content">
+              <p class="timelineboxtitle" style="
+                    color: white;
+                    padding: 0 1rem 1rem 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 20rem;
+                  ">
+                Singapore Junior Chemistry Olympiad
+              </p>
+              <div class="timelineline"></div>
+            </div>
+          </div>
+
+          <div style="
+                display: flex;
+                width: fit-content;
+                position: relative;
+                align-items: end;
+              ">
+            <div style="width: fit-content">
+              <p class="timelineboxtitle" style="color: white; margin-bottom: 1rem">
+                SUTD-SST Big D Camp
+              </p>
+              <div class="timelinebox">
+                <img src="bigd1.jpeg" alt="BigD" style="padding: 1rem; width: 100%; border-radius: 1.5rem" />
               </div>
               <div class="timelineline"></div>
             </div>
-
-            <div
-              style="
-                display: flex;
-                width: fit-content;
-                position: relative;
-                align-items: end;
-              "
-            >
-              <div style="width: fit-content">
-                <p
-                  class="timelineboxtitle"
-                  style="
-                    color: white;
-                    padding: 0 1rem 1rem 0;
-                    display: flex;
-                    flex-wrap: wrap;
-                    width: 20rem;
-                  "
-                >
-                  Singapore Junior Physics Olympiad
-                </p>
-                <div class="timelineline"></div>
-              </div>
-            </div>
-
-            <div
-              style="
-                display: flex;
-                width: fit-content;
-                position: relative;
-                align-items: end;
-              "
-            >
-              <div style="width: fit-content">
-                <p
-                  class="timelineboxtitle"
-                  style="
-                    color: white;
-                    padding: 0 1rem 1rem 0;
-                    display: flex;
-                    flex-wrap: wrap;
-                    width: 20rem;
-                  "
-                >
-                  Singapore Junior Chemistry Olympiad
-                </p>
-                <div class="timelineline"></div>
-              </div>
-            </div>
-
-            <div
-              style="
-                display: flex;
-                width: fit-content;
-                position: relative;
-                align-items: end;
-              "
-            >
-              <div style="width: fit-content">
-                <p
-                  class="timelineboxtitle"
-                  style="color: white; margin-bottom: 1rem"
-                >
-                  SUTD-SST Big D Camp
-                </p>
-                <div class="timelinebox">
-                  <img
-                    src="bigd1.jpeg"
-                    alt="BigD"
-                    style="padding: 1rem; width: 100%; border-radius: 1.5rem"
-                  />
-                </div>
-                <div class="timelineline"></div>
-              </div>
-            </div>
           </div>
+        </div>
 
-          <!-- 2022 -->
-          <div
-            style="
+        <!-- 2022 -->
+        <div style="
               display: flex;
               flex-direction: row;
               width: 25%;
               justify-content: space-evenly;
-            "
-          >
-            <div
-              style="
+            ">
+          <div style="
                 display: flex;
                 width: fit-content;
                 position: relative;
                 align-items: end;
-              "
-            >
-              <div style="width: fit-content">
-                <p
-                  class="timelineboxtitle"
-                  style="
+              ">
+            <div style="width: fit-content">
+              <p class="timelineboxtitle" style="
                     color: white;
                     padding: 0 1rem 1rem;
                     display: flex;
                     flex-wrap: wrap;
                     width: 20rem;
-                  "
-                >
-                  Australian Informatics Olympiad
-                </p>
-                <div class="timelineline"></div>
-              </div>
+                  ">
+                Australian Informatics Olympiad
+              </p>
+              <div class="timelineline"></div>
             </div>
+          </div>
 
-            <div
-              style="
+          <div style="
                 display: flex;
                 width: fit-content;
                 position: relative;
                 align-items: end;
-              "
-            >
-              <div style="width: fit-content">
-                <p
-                  class="timelineboxtitle"
-                  style="
+              ">
+            <div style="width: fit-content">
+              <p class="timelineboxtitle" style="
                     color: white;
                     padding: 0 1rem 1rem;
                     display: flex;
                     flex-wrap: wrap;
                     width: 20rem;
-                  "
-                >
-                  Singapore Junior Chemistry Olympiad
-                </p>
-                <div class="timelineline"></div>
-              </div>
+                  ">
+                Singapore Junior Chemistry Olympiad
+              </p>
+              <div class="timelineline"></div>
             </div>
+          </div>
 
-            <div
-              style="
+          <div style="
                 display: flex;
                 width: fit-content;
                 position: relative;
                 align-items: end;
-              "
-            >
-              <div style="width: fit-content">
-                <p
-                  class="timelineboxtitle"
-                  style="color: white; margin-bottom: 1rem"
-                >
-                  First Lego League
-                </p>
-                <div class="timelinebox">
-                  <img
-                    src="FLL2022robot.jpeg"
-                    alt="FLL"
-                    style="padding: 1rem; width: 100%; border-radius: 1.5rem"
-                  />
-                </div>
-                <div class="timelineline"></div>
+              ">
+            <div style="width: fit-content">
+              <p class="timelineboxtitle" style="color: white; margin-bottom: 1rem">
+                First Lego League
+              </p>
+              <div class="timelinebox">
+                <img src="FLL2022robot.jpeg" alt="FLL" style="padding: 1rem; width: 100%; border-radius: 1.5rem" />
               </div>
+              <div class="timelineline"></div>
             </div>
           </div>
+        </div>
 
-          <!-- 2021 -->
-          <div
-            style="
+        <!-- 2021 -->
+        <div style="
               display: flex;
               flex-direction: row;
               width: 25%;
               justify-content: space-evenly;
-            "
-          >
-            <div
-              style="
+            ">
+          <div style="
                 display: flex;
                 width: fit-content;
                 position: relative;
                 align-items: end;
-              "
-            >
-              <div style="width: fit-content">
-                <p
-                  class="timelineboxtitle"
-                  style="
+              ">
+            <div style="width: fit-content">
+              <p class="timelineboxtitle" style="
                     color: white;
                     padding: 0 1rem 1rem;
                     display: flex;
                     flex-wrap: wrap;
                     width: 25rem;
-                  "
-                >
-                  Design Thinking with Robotics and Computational Thinking
-                </p>
-                <div class="timelineline"></div>
-              </div>
+                  ">
+                Design Thinking with Robotics and Computational Thinking
+              </p>
+              <div class="timelineline"></div>
             </div>
+          </div>
 
-            <div
-              style="
+          <div style="
                 display: flex;
                 width: fit-content;
                 position: relative;
                 align-items: end;
-              "
-            >
-              <div style="width: fit-content">
-                <p
-                  class="timelineboxtitle"
-                  style="color: white; margin-bottom: 1rem"
-                >
-                  First Lego League
-                </p>
-                <div class="timelinebox">
-                  <img
-                    src="FLL2021robot.jpeg"
-                    alt="FLL"
-                    style="padding: 1rem; width: 100%; border-radius: 1.5rem"
-                  />
-                </div>
-                <div class="timelineline"></div>
+              ">
+            <div style="width: fit-content">
+              <p class="timelineboxtitle" style="color: white; margin-bottom: 1rem">
+                First Lego League
+              </p>
+              <div class="timelinebox">
+                <img src="FLL2021robot.jpeg" alt="FLL" style="padding: 1rem; width: 100%; border-radius: 1.5rem" />
               </div>
+              <div class="timelineline"></div>
             </div>
           </div>
+        </div>
 
-          <!-- 2020 -->
-          <div
-            style="
+        <!-- 2020 -->
+        <div style="
               display: flex;
               flex-direction: row;
               width: 25%;
               justify-content: space-evenly;
-            "
-          >
-            <div
-              style="
+            ">
+          <div style="
                 display: flex;
                 width: fit-content;
                 position: relative;
                 align-items: end;
-              "
-            >
-              <div style="width: fit-content">
-                <p
-                  class="timelineboxtitle"
-                  style="
+              ">
+            <div style="width: fit-content">
+              <p class="timelineboxtitle" style="
                     color: white;
                     padding: 0 1rem 1rem;
                     display: flex;
                     flex-wrap: wrap;
                     width: 20rem;
-                  "
-                >
-                  Computational and algorithmic thinking
-                </p>
-                <div class="timelineline"></div>
-              </div>
+                  ">
+                Computational and algorithmic thinking
+              </p>
+              <div class="timelineline"></div>
             </div>
+          </div>
 
-            <div
-              style="
+          <div style="
                 display: flex;
                 width: fit-content;
                 position: relative;
                 align-items: end;
-              "
-            >
-              <div style="width: fit-content">
-                <p
-                  class="timelineboxtitle"
-                  style="
+              ">
+            <div style="width: fit-content">
+              <p class="timelineboxtitle" style="
                     color: white;
                     padding: 0 1rem 1rem;
                     display: flex;
                     flex-wrap: wrap;
                     width: 20rem;
-                  "
-                >
-                  SASMO
-                </p>
-                <div class="timelineline"></div>
-              </div>
+                  ">
+                SASMO
+              </p>
+              <div class="timelineline"></div>
             </div>
+          </div>
 
-            <div
-              style="
+          <div style="
                 display: flex;
                 width: fit-content;
                 position: relative;
                 align-items: end;
-              "
-            >
-              <div style="width: fit-content">
-                <p
-                  class="timelineboxtitle"
-                  style="color: white; margin-bottom: 1rem"
-                >
-                  iCool Challenge
-                </p>
-                <div class="timelinebox">
-                  <img
-                    src="iCoolChallenge.jpeg"
-                    alt="iCool"
-                    style="padding: 1rem; width: 100%; border-radius: 1.5rem"
-                  />
-                </div>
-                <div class="timelineline"></div>
+              ">
+            <div style="width: fit-content">
+              <p class="timelineboxtitle" style="color: white; margin-bottom: 1rem">
+                iCool Challenge
+              </p>
+              <div class="timelinebox">
+                <img src="iCoolChallenge.jpeg" alt="iCool" style="padding: 1rem; width: 100%; border-radius: 1.5rem" />
               </div>
+              <div class="timelineline"></div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="timeline-line">
-          <div class="timeline-year">2023</div>
-          <div class="timeline-year">2022</div>
-          <div class="timeline-year">2021</div>
-          <div class="timeline-year">2020</div>
-        </div>
+      <div class="timeline-line">
+        <div class="timeline-year">2023</div>
+        <div class="timeline-year">2022</div>
+        <div class="timeline-year">2021</div>
+        <div class="timeline-year">2020</div>
+      </div>
 
-        <div
-          style="
+      <div style="
             display: flex;
             position: relative;
             bottom: 0.1rem;
             width: 300rem;
             padding-left: 4rem;
-          "
-        >
-          <!-- 2023 -->
-          <div
-            style="
+          ">
+        <!-- 2023 -->
+        <div style="
               display: flex;
               flex-direction: row;
               width: 26%;
               justify-content: space-evenly;
-            "
-          >
-            <div
-              style="
+            ">
+          <div style="
                 width: fit-content;
                 display: flex;
                 flex-direction: row;
                 gap: 1rem;
-              "
-            >
-              <div
-                style="
+              ">
+            <div style="
                   display: flex;
                   width: fit-content;
                   position: relative;
                   align-items: start;
-                "
-              >
-                <div style="width: fit-content">
-                  <div class="timelineline"></div>
-                  <p
-                    class="timelineboxtitle"
-                    style="
+                ">
+              <div style="width: fit-content">
+                <div class="timelineline"></div>
+                <p class="timelineboxtitle" style="
                       color: white;
                       margin: 0 5rem 1rem;
                       display: flex;
                       flex-wrap: wrap;
                       width: 15rem;
-                    "
-                  >
-                    Chemistry Rapid Challenge
-                  </p>
-                </div>
+                    ">
+                  Chemistry Rapid Challenge
+                </p>
               </div>
+            </div>
 
-              <div
-                style="
+            <div style="
                   display: flex;
                   width: fit-content;
                   position: relative;
                   align-items: start;
-                "
-              >
-                <div style="width: fit-content">
-                  <div class="timelineline"></div>
-                  <p
-                    class="timelineboxtitle"
-                    style="color: white; margin-bottom: 1rem"
-                  >
-                    Ngee Ann Poly math challenge
-                  </p>
-                  <div class="timelinebox">
-                    <img
-                      src="NPmathchallenge.jpg"
-                      alt="NPmathchallenge"
-                      style="padding: 1rem; width: 100%; border-radius: 1.5rem"
-                    />
-                  </div>
+                ">
+              <div style="width: fit-content">
+                <div class="timelineline"></div>
+                <p class="timelineboxtitle" style="color: white; margin-bottom: 1rem">
+                  Ngee Ann Poly math challenge
+                </p>
+                <div class="timelinebox">
+                  <img src="NPmathchallenge.jpg" alt="NPmathchallenge"
+                    style="padding: 1rem; width: 100%; border-radius: 1.5rem" />
                 </div>
               </div>
             </div>
+          </div>
 
-            <div
-              style="
+          <div style="
                 display: flex;
                 width: fit-content;
                 position: relative;
                 align-items: start;
                 margin-left: 5rem;
-              "
-            >
-              <div style="width: fit-content">
-                <div class="timelineline"></div>
-                <p
-                  class="timelineboxtitle"
-                  style="
+              ">
+            <div style="width: fit-content">
+              <div class="timelineline"></div>
+              <p class="timelineboxtitle" style="
                     color: white;
                     display: flex;
                     flex-wrap: wrap;
                     width: fit-content;
-                  "
-                >
-                  Perse
-                </p>
-              </div>
+                  ">
+                Perse
+              </p>
             </div>
+          </div>
 
-            <div
-              style="
+          <div style="
                 display: flex;
                 width: fit-content;
                 position: relative;
                 align-items: start;
-              "
-            >
-              <div style="width: fit-content">
-                <div class="timelineline"></div>
-                <p
-                  class="timelineboxtitle"
-                  style="color: white; margin-bottom: 1rem"
-                >
-                  Python in Five
-                </p>
-                <div class="timelinebox">
-                  <img
-                    src="Pi5.png"
-                    alt="Pi5"
-                    style="padding: 1rem; width: 100%; border-radius: 1.5rem"
-                  />
-                </div>
+              ">
+            <div style="width: fit-content">
+              <div class="timelineline"></div>
+              <p class="timelineboxtitle" style="color: white; margin-bottom: 1rem">
+                Python in Five
+              </p>
+              <div class="timelinebox">
+                <img src="Pi5.png" alt="Pi5" style="padding: 1rem; width: 100%; border-radius: 1.5rem" />
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- 2022 -->
-          <div
-            style="
+        <!-- 2022 -->
+        <div style="
               display: flex;
               flex-direction: row;
               width: 24%;
               justify-content: space-evenly;
-            "
-          >
-            <div
-              style="
+            ">
+          <div style="
                 display: flex;
                 width: fit-content;
                 position: relative;
                 align-items: start;
-              "
-            >
-              <div style="width: fit-content">
-                <div class="timelineline"></div>
-                <p
-                  class="timelineboxtitle"
-                  style="
+              ">
+            <div style="width: fit-content">
+              <div class="timelineline"></div>
+              <p class="timelineboxtitle" style="
                     color: white;
                     margin-bottom: 0 2rem 1rem;
                     display: flex;
                     flex-wrap: wrap;
                     width: 20rem;
-                  "
-                >
-                  Service learning project
-                </p>
-              </div>
-            </div>
-
-            <div
-              style="
-                display: flex;
-                width: fit-content;
-                position: relative;
-                align-items: start;
-              "
-            >
-              <div style="width: fit-content">
-                <div class="timelineline"></div>
-                <p
-                  class="timelineboxtitle"
-                  style="
-                    color: white;
-                    margin-bottom: 0 2rem 1rem;
-                    display: flex;
-                    flex-wrap: wrap;
-                    width: 20rem;
-                  "
-                >
-                  Perse
-                </p>
-              </div>
+                  ">
+                Service learning project
+              </p>
             </div>
           </div>
 
-          <!-- 2021 -->
-          <div
-            style="
+          <div style="
+                display: flex;
+                width: fit-content;
+                position: relative;
+                align-items: start;
+              ">
+            <div style="width: fit-content">
+              <div class="timelineline"></div>
+              <p class="timelineboxtitle" style="
+                    color: white;
+                    margin-bottom: 0 2rem 1rem;
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 20rem;
+                  ">
+                Perse
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2021 -->
+        <div style="
               display: flex;
               flex-direction: row;
               width: 25%;
               justify-content: space-evenly;
-            "
-          >
-            <div
-              style="
+            ">
+          <div style="
                 display: flex;
                 width: fit-content;
                 position: relative;
                 align-items: start;
                 padding-left: 15rem;
-              "
-            >
-              <div style="width: fit-content">
-                <div class="timelineline"></div>
-                <p
-                  class="timelineboxtitle"
-                  style="
+              ">
+            <div style="width: fit-content">
+              <div class="timelineline"></div>
+              <p class="timelineboxtitle" style="
                     color: white;
                     margin-bottom: 0 2rem 1rem;
                     display: flex;
                     flex-wrap: wrap;
                     width: 20rem;
-                  "
-                >
-                  Computational and Algorithmic Thinking
-                </p>
-              </div>
+                  ">
+                Computational and Algorithmic Thinking
+              </p>
             </div>
+          </div>
 
-            <div
-              style="
+          <div style="
                 display: flex;
                 width: fit-content;
                 position: relative;
                 align-items: start;
                 padding-left: 15rem;
-              "
-            >
-              <div style="width: fit-content">
-                <div class="timelineline"></div>
-                <p
-                  class="timelineboxtitle"
-                  style="
+              ">
+            <div style="width: fit-content">
+              <div class="timelineline"></div>
+              <p class="timelineboxtitle" style="
                     color: white;
                     margin-bottom: 0 2rem 1rem;
                     display: flex;
                     flex-wrap: wrap;
                     width: 20rem;
-                  "
-                >
-                  National Robotics Challenge
-                </p>
-              </div>
+                  ">
+                National Robotics Challenge
+              </p>
             </div>
           </div>
+        </div>
 
-          <!-- 2020 -->
-          <div
-            style="
+        <!-- 2020 -->
+        <div style="
               display: flex;
               flex-direction: row;
               width: 25%;
               justify-content: space-evenly;
-            "
-          >
-            <div
-              style="
+            ">
+          <div style="
                 display: flex;
                 width: fit-content;
                 position: relative;
                 align-items: start;
                 padding-left: 5rem;
-              "
-            >
-              <div style="width: fit-content">
-                <div class="timelineline"></div>
-                <p
-                  class="timelineboxtitle"
-                  style="
+              ">
+            <div style="width: fit-content">
+              <div class="timelineline"></div>
+              <p class="timelineboxtitle" style="
                     color: white;
                     margin-bottom: 0 2rem 1rem;
                     display: flex;
                     flex-wrap: wrap;
                     width: 20rem;
-                  "
-                >
-                  Singapore Energy Grand challenge
-                </p>
-              </div>
+                  ">
+                Singapore Energy Grand challenge
+              </p>
             </div>
+          </div>
 
-            <div
-              style="
+          <div style="
                 display: flex;
                 width: fit-content;
                 position: relative;
                 align-items: start;
                 padding-left: 5rem;
-              "
-            >
-              <div style="width: fit-content">
-                <div class="timelineline"></div>
-                <p
-                  class="timelineboxtitle"
-                  style="
+              ">
+            <div style="width: fit-content">
+              <div class="timelineline"></div>
+              <p class="timelineboxtitle" style="
                     color: white;
                     margin-bottom: 0 2rem 1rem;
                     display: flex;
                     flex-wrap: wrap;
                     width: 20rem;
-                  "
-                >
-                  Oxford University Computing Challenge
-                </p>
-              </div>
+                  ">
+                Oxford University Computing Challenge
+              </p>
             </div>
+          </div>
 
-            <div
-              style="
+          <div style="
                 display: flex;
                 width: fit-content;
                 position: relative;
                 align-items: start;
                 padding-left: 5rem;
-              "
-            >
-              <div style="width: fit-content">
-                <div class="timelineline"></div>
-                <p
-                  class="timelineboxtitle"
-                  style="color: white; margin-bottom: 1rem"
-                >
-                  NXplorers
-                </p>
-                <div class="timelinebox">
-                  <img
-                    src="NXplorers.jpeg"
-                    alt="NXplorers"
-                    style="padding: 1rem; width: 100%; border-radius: 1.5rem"
-                  />
-                </div>
+              ">
+            <div style="width: fit-content">
+              <div class="timelineline"></div>
+              <p class="timelineboxtitle" style="color: white; margin-bottom: 1rem">
+                NXplorers
+              </p>
+              <div class="timelinebox">
+                <img src="NXplorers.jpeg" alt="NXplorers" style="padding: 1rem; width: 100%; border-radius: 1.5rem" />
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="projects" class="projectspage" style="margin-right: 3rem">
+  <div id="projects" class="projectspage" style="margin-right: 3rem">
+    <div style="display: flex; flex-direction: row">
+      <p class="achievements" style="color: rgb(150, 239, 136)">4.</p>
+      <p class="achievements">Projects</p>
+      <div class="divider" style="height: 0.1rem; width: 20rem"></div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; max-width: 100vw">
       <div style="display: flex; flex-direction: row">
-        <p class="achievements" style="color: rgb(150, 239, 136)">4.</p>
-        <p class="achievements">Projects</p>
-        <div class="divider" style="height: 0.1rem; width: 20rem"></div>
-      </div>
-
-      <div style="display: flex; flex-direction: column; max-width: 100vw">
-        <div style="display: flex; flex-direction: row">
-          <img src="Kichn.png" alt="Kichn" class="projectpicture" />
-          <div
-            style="
+        <img src="Kichn.png" alt="Kichn" class="projectpicture" />
+        <div style="
               display: flex;
               flex-direction: column;
               width: 50%;
               gap: 0.5rem;
-            "
-          >
-            <p
-              style="
+            ">
+          <p style="
                 color: rgb(150, 239, 136);
-                text-align: right;
+                margin-left: 2rem;
                 font-size: rem;
-              "
-            >
-              2022-2023
-            </p>
-            <p
-              style="
+              ">
+            2022-2023
+          </p>
+          <p style="
                 color: rgba(204, 214, 246, 1);
-                text-align: right;
+                margin-left: 2rem;
                 font-size: 1.5rem;
-              "
-            >
-              Kichn
-            </p>
-            <p
-              style="
+              ">
+            Kichn
+          </p>
+          <p style="
                 color: white;
-                text-align: right;
+                text-align: left;
                 height: 16rem;
                 margin-left: 2rem;
                 font-size: 1.2rem;
-              "
-            >
-              Kichn is a kitchen inventory management app designed to reduce
-              food waste. It helps users track their FairPrice products and
-              expiry dates. Built with a Python backend and web frontend (using
-              WindiCSS, AlpineJS, and HTMX), the app includes inventory
-              management, a grocery list, and real-time sharing. Kichn's barcode
-              scanner and instant search make it quick and easy to find
-              products. The app uses Redis for its database, AIOHTTP for the web
-              server, Jinja as the HTML templating engine, and Meilisearch for
-              instant search. Kichn scrapes data from the FairPrice API to
-              ensure an extensive and accurate product database. By using Kichn,
-              users can save money, reduce waste, and enhance their shopping
-              experience.
-            </p>
-          </div>
+              ">
+            <span style="color: #ccd6f6"> Purpose: </span> A kitchen inventory
+            management app designed to reduce food waste. <br />
+            <span style="color: #ccd6f6"> How: </span> Helps users track their
+            FairPrice products and expiry dates so that less food expires by
+            scraping data from the FairPrice API ensuring an extensive and
+            accurate product database.
+            <br />
+            <span style="color: #ccd6f6"> Created using: </span> Python,
+            WindiCSS, AlpineJS, and HTMX, Redis, AIOHTTP, Jinja, Meilisearch,
+            <br />
+            <span style="color: #ccd6f6"> Features: </span> Inventory
+            management, Grocery list, Real-time sharing, Barcode scanner,
+            Instant search
+          </p>
         </div>
       </div>
+    </div>
 
-      <div style="display: flex; flex-direction: column; max-width: 100vw">
-        <div style="display: flex; flex-direction: row">
-          <div
-            style="
+    <div style="display: flex; flex-direction: column; max-width: 100vw">
+      <div style="display: flex; flex-direction: row">
+        <div style="
               display: flex;
               flex-direction: column;
               width: 50%;
               gap: 0.5rem;
               margin-right: 3rem;
-            "
-          >
-            <p
-              style="
+            ">
+          <p style="
                 color: rgb(150, 239, 136);
                 text-align: left;
                 font-size: 1rem;
-              "
-            >
-              2021
-            </p>
-            <p
-              style="
+              ">
+            2021
+          </p>
+          <p style="
                 color: rgba(204, 214, 246, 1);
                 text-align: left;
                 font-size: 1.5rem;
-              "
-            >
-              EasyPlant
-            </p>
-            <p
-              style="
+              ">
+            EasyPlant
+          </p>
+          <p style="
                 color: white;
                 margin-right: 0.5rem;
                 text-align: left;
                 height: 16rem;
                 font-size: 1.2rem;
-              "
-            >
-              EZPlant is the essential plant-growing companion app that caters
-              to every need of plant owners. Its plant-identification quiz helps
-              users discover the ideal plant to meet their specific needs.
-              EZPlant offers customised gardening tips for each user's plant
-              type, including reminders for watering their plants. The app also
-              features a marketplace that allows users to discover and explore
-              shops that sell plants. EZPlant is the must-have app for gardening
-              enthusiasts, whether they are beginners or experienced gardeners.
-              With its intuitive user interface and comprehensive features,
-              EZPlant is the perfect solution for taking gardening skills to the
-              next level.
-            </p>
-          </div>
-          <img src="EasyPlant.png" alt="EasyPlant" class="projectpicture" />
+              ">
+            <span style="color: #ccd6f6"> Purpose: </span> A plant-growing
+            companion app <br />
+            <span style="color: #ccd6f6"> How: </span> Offers customised
+            gardening tips <br />
+            <span style="color: #ccd6f6"> Created using: </span> Swift,
+            SwiftUI <br />
+            <span style="color: #ccd6f6"> Features: </span>
+            Plant-identification quiz - helps users find the plant for them,
+            Plant care tips, Reminders for watering, Marketplace for buying
+            plants
+          </p>
         </div>
-      </div>
-
-      <div style="display: flex; flex-direction: column; max-width: 100vw">
-        <div style="display: flex; flex-direction: row">
-          <img
-            src="YoutubeDownloader.png"
-            alt="YoutubeDownloader"
-            class="projectpicture"
-          />
-          <div
-            style="
-              display: flex;
-              flex-direction: column;
-              width: 50%;
-              gap: 0.5rem;
-            "
-          >
-            <p
-              style="
-                color: rgb(150, 239, 136);
-                text-align: right;
-                font-size: 1rem;
-              "
-            >
-              2022 (Personal Project)
-            </p>
-            <p
-              style="
-                color: rgba(204, 214, 246, 1);
-                text-align: right;
-                font-size: 1.5rem;
-              "
-            >
-              Youtube Video Downloader
-            </p>
-            <p
-              style="
-                color: white;
-                text-align: right;
-                height: 16rem;
-                margin-left: 2rem;
-                font-size: 1.2rem;
-              "
-            >
-              I created a powerful Python application that enables users to
-              download YouTube videos in seconds, and in the highest available
-              quality. This versatile application can also download entire
-              playlists at once, making it even more convenient for users. With
-              its speed and efficiency, users can enjoy their favorite videos
-              offline, anytime and anywhere. Whether you're a student,
-              professional, or casual YouTube viewer, this Python application is
-              a must-have tool for downloading and archiving your favourite
-              content.
-            </p>
-          </div>
-        </div>
+        <img src="EasyPlant.png" alt="EasyPlant" class="projectpicture" />
       </div>
     </div>
 
-    <div id="Service" class="projectspage" style="margin-right: 3rem">
+    <div style="display: flex; flex-direction: column; max-width: 100vw">
       <div style="display: flex; flex-direction: row">
-        <p class="achievements" style="color: rgb(150, 239, 136)">5.</p>
-        <p class="achievements">Service</p>
-        <div class="divider" style="height: 0.1rem; width: 20rem"></div>
+        <img src="YoutubeDownloader.png" alt="YoutubeDownloader" class="projectpicture" />
+        <div style="
+              display: flex;
+              flex-direction: column;
+              width: 50%;
+              height: 50%;
+              gap: 0.5rem;
+            ">
+          <p style="
+                color: rgb(150, 239, 136);
+                margin-left: 2rem;
+                font-size: 1rem;
+              ">
+            2022 (Personal Project)
+          </p>
+          <p style="
+                color: rgba(204, 214, 246, 1);
+                margin-left: 2rem;
+                font-size: 1.5rem;
+              ">
+            Youtube Video Downloader
+          </p>
+          <p style="
+                color: white;
+                height: 16rem;
+                margin-left: 2rem;
+                font-size: 1.2rem;
+              ">
+            <span style="color: #ccd6f6"> Purpose: </span> Download YouTube
+            videos <br />
+            <span style="color: #ccd6f6"> How: </span> Uses the Pytube libary
+            <br />
+            <span style="color: #ccd6f6"> Created using: </span> Python <br />
+            <span style="color: #ccd6f6"> Features: </span> Download videos
+            and playlists quickly and in the highest quality available
+          </p>
+        </div>
       </div>
+    </div>
+  </div>
 
-      <div style="display: flex; flex-direction: row; gap: 1rem">
-        <div style="display: flex; flex-direction: column; width: fit-content">
-          <div style="display: flex; flex-direction: column">
-            <img
-              src="SIP.png"
-              alt="SIP"
-              class="projectpicture"
-              style="height: 100%; width: 100%; margin-bottom: 1rem"
-            />
-            <div style="display: flex; flex-direction: column; gap: 0.5rem">
-              <p
-                style="
+  <div id="Service" class="projectspage" style="margin-right: 3rem">
+    <div style="display: flex; flex-direction: row">
+      <p class="achievements" style="color: rgb(150, 239, 136)">5.</p>
+      <p class="achievements">Service</p>
+      <div class="divider" style="height: 0.1rem; width: 20rem"></div>
+    </div>
+
+    <div style="display: flex; flex-direction: row; gap: 1rem">
+      <div style="display: flex; flex-direction: column; width: fit-content">
+        <div style="display: flex; flex-direction: column">
+          <img src="SIP.png" alt="SIP" class="projectpicture" style="height: 100%; width: 100%; margin-bottom: 1rem" />
+          <div style="display: flex; flex-direction: column; gap: 0.5rem">
+            <p style="
                   color: rgb(150, 239, 136);
                   text-align: left;
                   font-size: 1rem;
-                "
-              >
-                2023
-              </p>
-              <p
-                style="
+                ">
+              2023
+            </p>
+            <p style="
                   color: rgba(204, 214, 246, 1);
                   text-align: left;
                   font-size: 1.5rem;
-                "
-              >
-                Student-Initiated Project (Vice-Chairperson)
-              </p>
-              <p
-                style="
+                ">
+              Student-Initiated Project (Vice-Chairperson)
+            </p>
+            <p style="
                   color: white;
                   margin-right: 0.5rem;
                   text-align: left;
                   height: 16rem;
-                "
-              >
-                I started a student-initiated project with some of my
-                classmates. We provided 3D printing lessons to 34 primary 5
-                students from Yew Tee Primary School. We aimed to foster their
-                creativity and cultivate a passion for STEM subjects. Over three
-                days, we introduced the students to various types of 3D printers
-                and guided them in using TinkerCAD, a 3D modelling software.
-                Through this software, they could design their unique creations.
-                We organised a competition to assess their newly acquired
-                skills, allowing the students to showcase their talents and
-                abilities. We aimed to empower the students through hands-on
-                learning and encourage their enthusiasm for STEM.
-              </p>
-            </div>
+                ">
+              I started a student-initiated project with some of my
+              classmates. We provided 3D printing lessons to 34 primary 5
+              students from Yew Tee Primary School. We aimed to foster their
+              creativity and cultivate a passion for STEM subjects. Over three
+              days, we introduced the students to various types of 3D printers
+              and guided them in using TinkerCAD, a 3D modelling software.
+              Through this software, they could design their unique creations.
+              We organised a competition to assess their newly acquired
+              skills, allowing the students to showcase their talents and
+              abilities. We aimed to empower the students through hands-on
+              learning and encourage their enthusiasm for STEM.
+            </p>
           </div>
         </div>
+      </div>
 
-        <div style="display: flex; flex-direction: column; width: fit-content">
-          <div style="display: flex; flex-direction: column">
-            <img
-              src="Pi5.png"
-              alt="EasyPlant"
-              class="projectpicture"
-              style="height: 100%; width: 100%; margin-bottom: 1rem"
-            />
-            <div style="display: flex; flex-direction: column; gap: 0.5rem">
-              <p
-                style="
+      <div style="display: flex; flex-direction: column; width: fit-content">
+        <div style="display: flex; flex-direction: column">
+          <img src="Pi5.png" alt="EasyPlant" class="projectpicture"
+            style="height: 100%; width: 100%; margin-bottom: 1rem" />
+          <div style="display: flex; flex-direction: column; gap: 0.5rem">
+            <p style="
                   color: rgb(150, 239, 136);
                   text-align: right;
                   font-size: 1rem;
-                "
-              >
-                2023
-              </p>
-              <p
-                style="
+                ">
+              2023
+            </p>
+            <p style="
                   color: rgba(204, 214, 246, 1);
                   text-align: right;
                   font-size: 1.5rem;
-                "
-              >
-                Python in Five (Class initiated project)
-              </p>
-              <p style="color: white; text-align: right; height: 16rem">
-                Python in Five was a student-initiated project that conducted a
-                5-hour beginners' Python programming workshop for
-                10-13-year-olds. The workshop consisted of five sessions, each
-                lasting 5 hours, and took place in March 2023. With an
-                impressive turnout, we had nearly 70 enthusiastic participants.
-                Our primary objective was to ignite the participants' curiosity
-                in programming, recognizing its growing importance in the 21st
-                century.
-              </p>
-            </div>
+                ">
+              Python in Five (Class initiated project)
+            </p>
+            <p style="color: white; text-align: right; height: 16rem">
+              Python in Five was a student-initiated project that conducted a
+              5-hour beginners' Python programming workshop for
+              10-13-year-olds. The workshop consisted of five sessions, each
+              lasting 5 hours, and took place in March 2023. With an
+              impressive turnout, we had nearly 70 enthusiastic participants.
+              Our primary objective was to ignite the participants' curiosity
+              in programming, recognizing its growing importance in the 21st
+              century.
+            </p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- <script>
+  <!-- <script>
         var loader = document.getElementById("preloader");
         window.addEventListener("load", function(){
             setTimeout(function(){
@@ -1392,5 +1069,6 @@
             }, 1000);
         })
     </script> -->
-  </body>
+</body>
+
 </html>

@@ -185,7 +185,7 @@ body {
   padding-left: 13vw;
   padding-bottom: 10rem;
   padding-top: 10rem;
-  width: fit-content;
+  width: 90%;
   height: fit-content;
 }
 
@@ -202,11 +202,11 @@ body {
 
 .achievementsbox {
   border-radius: 1.5rem;
-  margin: 2rem;
   width: 20rem;
   height: 20rem;
   background-color: rgb(21, 44, 77);
   display: flex;
+  margin: 1rem;
   flex-direction: column;
 }
 
@@ -250,8 +250,8 @@ body {
 .overlay {
   position: absolute;
   border-radius: 0.5rem;
-  width: 22rem;
-  height: 17rem;
+  width: 18rem;
+  height: 13rem;
   opacity: 0;
   transition: opacity 0.3s ease;
   background-color: rgba(0, 0, 0, 0.5);
