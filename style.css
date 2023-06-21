@@ -82,7 +82,7 @@ body {
   padding-left: 13vw;
   padding-bottom: 15rem;
   width: fit-content;
-  height: fit-content;
+  height: 100vh;
 }
 
 .greeting {
@@ -134,13 +134,13 @@ body {
 .aboutmepage {
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
   position: relative;
   padding-top: 40vh;
   padding-left: 13vw;
   padding-bottom: 25rem;
   width: fit-content;
-  height: fit-content;
+  height: 100vh;
 }
 
 .aboutme {
@@ -422,6 +422,17 @@ body {
   width: 100%;
   height: fit-content;
 }
+
+.circle {
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin-bottom: -0.1rem;
+  z-index: 999;
+}
 /* Projects page */
 .projectspage {
   display: flex;
@@ -436,9 +447,79 @@ body {
   padding-top: 10rem;
 }
 
+.project {
+  display: flex;
+  flex-direction: row;
+}
+
+#projectdescriptionsection {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 0.5rem;
+}
+
+#projectyear {
+  color: rgb(150, 239, 136);
+  margin-left: 2rem;
+  font-size: 1.5vh;
+}
+
+#projectnamesection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: fit-content;
+  gap: 0.5rem;
+}
+
+#projectname {
+  color: rgba(204, 214, 246, 1);
+  margin-left: 2rem;
+  font-size: 2vh;
+}
+
+#projectdescription {
+  color: white;
+  text-align: left;
+  margin-left: 2rem;
+  font-size: 1.3vh;
+  height: 50%;
+}
+
 .projectpicture {
   position: relative;
   width: 50%;
   height: 50%;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .project {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projectpicture {
+    width: 95%;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  #projectdescriptionsection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .projectpicture {
+    order: 1;
+  }
+}
+
+.servicepicture {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 1rem;
   border-radius: 0.5rem;
 }
