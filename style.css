@@ -522,3 +522,19 @@ body {
   margin-bottom: 1rem;
   border-radius: 0.5rem;
 }
+/* Contacts */
+.contactbox {
+  display: flex;
+  position: relative;
+  height: 10%;
+  width: 100%;
+  background-color: #000;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
